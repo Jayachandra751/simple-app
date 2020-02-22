@@ -13,19 +13,21 @@ pipeline {
             steps{
                  nexusArtifactUploader artifacts: [
                      [
-                         artifactId: 'simple-app', 
-                         classifier: '', 
-                         file: 'target/simple-app-1.0.0.war', 
-                         type: 'war'
-                    ]
-                ], 
-                credentialsId: 'nexus3', 
-                groupId: 'in.javahome', 
-                nexusUrl: '172.31.15.204:8081', 
-                nexusVersion: 'nexus3', 
-                protocol: 'http', 
-                repository: 'simpleapp-release', 
-                version: '1.0.0'
+                        artifactId: 'simple-app',
+                        classifier: '', 
+                        file: 'simple-app/simple-app-1.0.0.war', 
+                        type: 'war'
+                 ]
+              ],
+             credentialsId: '9c9686c1-ab14-45dd-b56d-405e19770f47',
+             groupId: 'in.javahome',
+             nexusUrl: 'localhost:8081',
+             nexusVersion: 'nexus3',
+             protocol: 'http',
+             repository: 'Simpleapp.release',
+             version: '1.0.0'
+
+
             }
         }
     }
