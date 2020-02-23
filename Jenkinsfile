@@ -24,7 +24,7 @@ pipeline {
 			nexusUrl: '52.66.206.178:8081',
 			nexusVersion: 'nexus3',
 			protocol: 'http',
-			repository: '52.66.206.178:8081/repository/test/',
+			repository: 'test',
 			version: '1.0.0'
 
 
