@@ -22,9 +22,9 @@ pipeline {
 			credentialsId: 'nexus1',
 			groupId: 'in.javahome',
 			nexusUrl: '52.66.206.178:8081',
-			nexusVersion: 'nexus2',
+			nexusVersion: 'nexus3',
 			protocol: 'http',
-			repository: 'http://52.66.206.178:8081/repository/test/',
+			repository: '52.66.206.178:8081/repository/test/',
 			version: '1.0.0'
 
 
